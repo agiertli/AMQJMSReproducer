@@ -1,12 +1,15 @@
 ### Start the AMQ Broker
 
+```
 ../bin/artemis create bpm-broker
 ./artemis queue create --name bpmqueue --auto-create-address --anycast
  ./artemis run
+ ```
 
  ###  Start the app
-
+```
  mvn spring-boot:run
+ ```
 
 
 ### Check the results
